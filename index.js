@@ -39,7 +39,7 @@ Box.prototype.getProgInfo = function(opts, cb) {
   this._get('/tv/getProgInfo', reqOpts, cb);
 }
 
-Box.prototype.tune = function(chan, cb) {
+Box.prototype.tune = function(opts, cb) {
   var reqOpts ={};
   if(typeof opts === 'string' || typeof opts === 'number') {
     reqOpts.major = opts;
